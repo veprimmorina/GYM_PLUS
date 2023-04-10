@@ -1,6 +1,7 @@
 # GYM_PLUS
 
 
+
 The gym management desktop application is an application designed to help gym owners and managers manage the day-to-day operations of their gym. The application allows gym owners and managers to manage gym equipment, trainers, and gym members.
 
 
