@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="abe9e4d2-b082-4d3f-a7e8-727cb9fbf6c8">
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     Fees."ID" AS Fees_ID,
+     Fees."Kohezgjatjanemuaj" AS Fees_Kohezgjatjanemuaj,
+     Fees."Cmimi" AS Fees_Cmimi,
+     Fees."PersoniID" AS Fees_PersoniID
+FROM
+     "dbo"."Fees" Fees]]>
+	</queryString>
+	<field name="Fees_ID" class="java.lang.Integer"/>
+	<field name="Fees_Kohezgjatjanemuaj" class="java.lang.Integer"/>
+	<field name="Fees_Cmimi" class="java.lang.Integer"/>
+	<field name="Fees_PersoniID" class="java.lang.Integer"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="229" y="20" width="140" height="36" uuid="6fe6af7e-4f04-4af1-badf-a919f9e8004e"/>
+				<textElement>
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Pagesat:]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<staticText>
+				<reportElement x="56" y="45" width="100" height="20" uuid="51db9ae3-ba34-4f03-9039-f9e6d9062487"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Cmimi:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="56" y="90" width="100" height="20" uuid="e2307a11-09a4-44a3-a384-505d39a87bf7"/>
+				<textFieldExpression><![CDATA[$F{Fees_Cmimi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="369" y="90" width="100" height="20" uuid="fba8df08-182d-4142-88da-0850cf3ee70f"/>
+				<textFieldExpression><![CDATA[$F{Fees_Kohezgjatjanemuaj}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="369" y="45" width="100" height="20" uuid="af984194-7e6d-4386-98e1-279a484f29fc"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[KoheZgjatja]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>
